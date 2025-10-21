@@ -29,8 +29,8 @@ export default function Hero() {
             <span className="block text-brand-700">Built with attention to detail.</span>
           </h1>
           <p className="mt-4 text-base md:text-lg text-black/70">
-            This page follows the Figma layout: sensible spacing, clear type, and predictable structure.
-            The code is small and readable—easy to extend after review.
+            Built to match the Figma design with balanced spacing and clear typography. 
+            The structure is straightforward to maintain
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <a href="#get-started" className="btn btn-primary">Get Started</a>
