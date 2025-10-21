@@ -120,4 +120,4 @@ The project runs out-of-the-box on **Vercel**.
 
 ---
 
-**Author:** Asma Ahmed
+**By:** Asma Ahmed
