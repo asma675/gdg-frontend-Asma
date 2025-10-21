@@ -1,6 +1,6 @@
 # GDG Front-end Challenge — Next.js, Tailwind, shadcn/ui
 
-This project is my submission for the GDG Front-end Developer take-home challenge.  
+This project is my submission for the GDG Front-end Developer take-home assessment.  
 It recreates the assigned Figma homepage using **Next.js 14**, **Tailwind CSS**, and **shadcn/ui** for the core UI components.
 
 ---
