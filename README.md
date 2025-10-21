@@ -1,4 +1,4 @@
-# GDG Front‑end Challenge — Next.js + Tailwind + shadcn/ui
+# GDG Front‑end Challenge - Next.js + Tailwind + shadcn/ui
 
 This is the Next.js version of the homepage based on the Figma reference.  
 It uses **Next.js 14 (App Router)**, **Tailwind CSS**, and **shadcn/ui** for components.
