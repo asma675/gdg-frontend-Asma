@@ -1,72 +1,123 @@
-# GDG Front‑end Challenge - Next.js + Tailwind + shadcn/ui
+# GDG Front-end Challenge — Next.js, Tailwind, shadcn/ui
 
-This is the Next.js version of the homepage based on the Figma reference.  
-It uses **Next.js 14 (App Router)**, **Tailwind CSS**, and **shadcn/ui** for components.
+This project is my submission for the GDG Front-end Developer take-home challenge.  
+It recreates the assigned Figma homepage using **Next.js 14**, **Tailwind CSS**, and **shadcn/ui** for the core UI components.
 
-## Getting started
+---
+
+## Getting Started
+
+Install the dependencies and start the local server:
 
 ```bash
-npm i
+npm install
 npm run dev
+````
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+---
+
+## Backend Placeholder
+
+The Hero section includes a small backend check to show front-end and API integration.
+If you set the variable `NEXT_PUBLIC_BACKEND_URL`, the app will call:
+
+```
+GET /health
 ```
 
-Open http://localhost:3000.
+and display the JSON response.
 
-## Backend placeholder
+**Example `.env.local`**
 
-If you set `NEXT_PUBLIC_BACKEND_URL`, the Hero section will call `GET /health` and print the response JSON.
-
-Create `.env.local`:
-
-```
+```bash
 NEXT_PUBLIC_BACKEND_URL=https://api.example.com
 ```
 
-If not set, the page will show: “Set NEXT_PUBLIC_BACKEND_URL to call backend.”
+If no URL is set, the page simply notes: *“Set NEXT_PUBLIC_BACKEND_URL to call backend.”*
 
-## Tech notes
+---
 
-- Next.js 14 (App Router) + TypeScript
-- Tailwind for layout and tokens
-- shadcn/ui components (Button, Card, Badge) and lucide-react icons ready
-- Sections are modular and easy to extend
+## Tech Stack
 
-## Commands
+* **Next.js 14 (App Router)** – routing and page structure
+* **TypeScript** – type safety
+* **Tailwind CSS** – layout and utility styling
+* **shadcn/ui** – ready-made components (Button, Card, Badge)
+* **lucide-react** – icons
 
-- `npm run dev` – start dev server
-- `npm run build` – production build
-- `npm run start` – run production server
+Each section of the homepage is built as a separate component to keep the code easy to read and maintain.
 
-## Structure
+---
+
+## Available Commands
+
+| Command         | Description                |
+| --------------- | -------------------------- |
+| `npm run dev`   | Run the development server |
+| `npm run build` | Create a production build  |
+| `npm run start` | Serve the production build |
+
+---
+
+## Folder Structure
 
 ```
-gdg-next/
-  ├─ app/
-  │  ├─ globals.css
-  │  ├─ layout.tsx
-  │  └─ page.tsx
-  ├─ components/
-  │  ├─ Navbar.tsx
-  │  ├─ Hero.tsx
-  │  ├─ Logos.tsx
-  │  ├─ Features.tsx
-  │  ├─ Showcase.tsx
-  │  ├─ Testimonials.tsx
-  │  ├─ Cta.tsx
-  │  └─ Footer.tsx
-  │  └─ ui/
-  │     ├─ badge.tsx
-  │     ├─ button.tsx
-  │     └─ card.tsx
-  ├─ lib/utils.ts
-  ├─ package.json
-  ├─ postcss.config.js
-  ├─ tailwind.config.ts
-  ├─ tsconfig.json
-  └─ next.config.ts
+app/
+  globals.css
+  layout.tsx
+  page.tsx
+components/
+  Navbar.tsx
+  Hero.tsx
+  Logos.tsx
+  Features.tsx
+  Showcase.tsx
+  Testimonials.tsx
+  Cta.tsx
+  Footer.tsx
+  ui/
+    badge.tsx
+    button.tsx
+    card.tsx
+lib/
+  utils.ts
+public/
+  favicon.ico
+.env.local.example
+package.json
+postcss.config.js
+tailwind.config.ts
+tsconfig.json
+next.config.ts
 ```
 
-## Deploy
+---
 
-- Works out-of-the-box on **Vercel**.  
-- Add `NEXT_PUBLIC_BACKEND_URL` in project environment variables.
+## Deployment
+
+The project runs out-of-the-box on **Vercel**.
+
+**Steps:**
+
+1. Push the repository to GitHub.
+2. Import it into [Vercel](https://vercel.com).
+3. Add the environment variable:
+
+   ```
+   NEXT_PUBLIC_BACKEND_URL=https://api.example.com
+   ```
+4. Deploy to get a live link (e.g. `https://gdg-frontend.vercel.app`).
+
+---
+
+## Notes
+
+* Fully responsive layout built from the provided Figma reference.
+* Clean, modular code that’s easy to extend.
+* Uses semantic HTML and accessible UI patterns.
+
+---
+
+**Author:** Asma Ahmed
