@@ -1,6 +1,6 @@
 # GDG Front‑end Challenge
 
-A small, readable React project using Vite and Tailwind. The homepage follows the provided Figma structure and includes a simple backend check.
+This project implements the GDG homepage challenge using React, Vite, and Tailwind CSS. It’s built to be simple, fast, and easy to extend. The homepage follows the provided Figma structure and includes a simple backend check.
 
 ## Getting started
 
